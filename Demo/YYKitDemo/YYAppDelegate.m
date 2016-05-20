@@ -9,6 +9,10 @@
 #import "YYAppDelegate.h"
 #import "YYRootViewController.h"
 
+#import "ReadonlyModel.h"
+
+#import "NSObject+YYModel.h"
+
 /// Fix the navigation bar height when hide status bar.
 @interface YYExampleNavBar : UINavigationBar
 @end
@@ -59,6 +63,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     YYRootViewController *root = [YYRootViewController new];
+    
+    ReadonlyModel *aReadonlyModel = [ReadonlyModel new];
+    
+    BOOL set = [aReadonlyModel modelSetWithDictionary:@{@"变量0":@"变量0的新值"}];
+    NSLog(@"设置变量0%@", set ? @"成功" : @"失败");
+    set = [aReadonlyModel modelSetWithDictionary:@{@"变量1":@"变量1的新值"}];
+    NSLog(@"设置变量1%@", set ? @"成功" : @"失败");
+    NSLog(@"%@", aReadonlyModel);
+    
+    
     YYExampleNavController *nav = [[YYExampleNavController alloc] initWithNavigationBarClass:[YYExampleNavBar class] toolbarClass:[UIToolbar class]];
     if ([nav respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
         nav.automaticallyAdjustsScrollViewInsets = NO;
@@ -68,7 +82,7 @@
     self.rootViewController = nav;
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.rootViewController;
-    self.window.backgroundColor = [UIColor grayColor];
+    self.window.backgroundColor    = [UIColor grayColor];
     [self.window makeKeyAndVisible];
     
     return YES;

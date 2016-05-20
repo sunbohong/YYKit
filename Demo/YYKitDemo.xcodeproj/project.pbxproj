@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B604FDC1CEF4C9700C519A2 /* ReadonlyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B604FDB1CEF4C9700C519A2 /* ReadonlyModel.m */; };
 		ABDC320D1BEAFB870012A159 /* YYTextTagExample.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */; };
 		D9067DF11B975D3900F346EB /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF01B975D3900F346EB /* YYTextExampleHelper.m */; };
 		D9067DF41B9813B500F346EB /* YYTextEditExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF31B9813B500F346EB /* YYTextEditExample.m */; };
@@ -196,6 +197,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B604FDA1CEF4C9700C519A2 /* ReadonlyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadonlyModel.h; sourceTree = "<group>"; };
+		0B604FDB1CEF4C9700C519A2 /* ReadonlyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadonlyModel.m; sourceTree = "<group>"; };
 		ABDC320B1BEAFB870012A159 /* YYTextTagExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExample.h; sourceTree = "<group>"; };
 		ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTagExample.m; sourceTree = "<group>"; };
 		D9067DEF1B975D3900F346EB /* YYTextExampleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextExampleHelper.h; sourceTree = "<group>"; };
@@ -588,6 +591,8 @@
 			children = (
 				D91A993C1B5A8DC200EF3A3E /* YYModelExample.h */,
 				D91A993D1B5A8DC200EF3A3E /* YYModelExample.m */,
+				0B604FDA1CEF4C9700C519A2 /* ReadonlyModel.h */,
+				0B604FDB1CEF4C9700C519A2 /* ReadonlyModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1316,6 +1321,7 @@
 				D9067E201B9A0B8F00F346EB /* WBStatusCell.m in Sources */,
 				D981932C1BC8115600BA0604 /* YYTextRubyExample.m in Sources */,
 				D9B2608F1BEE79370038C00A /* YYTextParser.m in Sources */,
+				0B604FDC1CEF4C9700C519A2 /* ReadonlyModel.m in Sources */,
 				D933C1621B7799A10065CDBB /* YYImageDisplayExample.m in Sources */,
 				D95340A51BA47D6E004FDE84 /* YYTextUndoRedoExample.m in Sources */,
 				D9B2609A1BEE79370038C00A /* YYReachability.m in Sources */,
