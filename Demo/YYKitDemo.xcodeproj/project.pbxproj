@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BBE2EF11CEFF70500815C37 /* ReadonlyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBE2EF01CEFF70500815C37 /* ReadonlyModel.m */; };
 		ABDC320D1BEAFB870012A159 /* YYTextTagExample.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */; };
 		D9067DF11B975D3900F346EB /* YYTextExampleHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF01B975D3900F346EB /* YYTextExampleHelper.m */; };
 		D9067DF41B9813B500F346EB /* YYTextEditExample.m in Sources */ = {isa = PBXBuildFile; fileRef = D9067DF31B9813B500F346EB /* YYTextEditExample.m */; };
@@ -196,6 +197,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BBE2EEF1CEFF70500815C37 /* ReadonlyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadonlyModel.h; sourceTree = "<group>"; };
+		0BBE2EF01CEFF70500815C37 /* ReadonlyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadonlyModel.m; sourceTree = "<group>"; };
 		ABDC320B1BEAFB870012A159 /* YYTextTagExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextTagExample.h; sourceTree = "<group>"; };
 		ABDC320C1BEAFB870012A159 /* YYTextTagExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYTextTagExample.m; sourceTree = "<group>"; };
 		D9067DEF1B975D3900F346EB /* YYTextExampleHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYTextExampleHelper.h; sourceTree = "<group>"; };
@@ -586,6 +589,8 @@
 		D91A99311B5A8D1600EF3A3E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0BBE2EEF1CEFF70500815C37 /* ReadonlyModel.h */,
+				0BBE2EF01CEFF70500815C37 /* ReadonlyModel.m */,
 				D91A993C1B5A8DC200EF3A3E /* YYModelExample.h */,
 				D91A993D1B5A8DC200EF3A3E /* YYModelExample.m */,
 			);
@@ -1321,6 +1326,7 @@
 				D9B2609A1BEE79370038C00A /* YYReachability.m in Sources */,
 				D9067E071B98A3B200F346EB /* YYFeedListExample.m in Sources */,
 				D9B260971BEE79370038C00A /* YYFileHash.m in Sources */,
+				0BBE2EF11CEFF70500815C37 /* ReadonlyModel.m in Sources */,
 				D9B260631BEE79370038C00A /* UIColor+YYAdd.m in Sources */,
 				D9B2609E1BEE79370038C00A /* YYTimer.m in Sources */,
 				D9B260651BEE79370038C00A /* UIDevice+YYAdd.m in Sources */,
