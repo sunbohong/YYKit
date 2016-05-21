@@ -9,6 +9,10 @@
 #import "YYAppDelegate.h"
 #import "YYRootViewController.h"
 
+#import "ReadonlyModel.h"
+
+#import "NSObject+YYModel.h"
+
 /// Fix the navigation bar height when hide status bar.
 @interface YYExampleNavBar : UINavigationBar
 @end
@@ -59,6 +63,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     YYRootViewController *root = [YYRootViewController new];
+    
+    ReadonlyModel *aReadonlyModel = [ReadonlyModel new];
+    
+    BOOL set = [aReadonlyModel modelSetWithDictionary:@{@"pro0":@"pro0的新值"}];
+    NSLog(@"设置pro0%@", set ? @"成功" : @"失败");
+    NSLog(@"%@", aReadonlyModel);
+
+    set = [aReadonlyModel modelSetWithDictionary:@{@"pro1":@"pro1的新值"}];
+    NSLog(@"设置pro1%@", set ? @"成功" : @"失败");
+    NSLog(@"%@", aReadonlyModel);
+
+    set = [aReadonlyModel modelSetWithDictionary:@{@"pro2":@"pro2的新值"}];
+    NSLog(@"设置pro2%@", set ? @"成功" : @"失败");
+    NSLog(@"%@", aReadonlyModel);
+
+    [aReadonlyModel setValue:@"pro2的新值(setvalue)" forKey:@"pro2"];
+
+    NSLog(@"%@", aReadonlyModel);
+    
+    
     YYExampleNavController *nav = [[YYExampleNavController alloc] initWithNavigationBarClass:[YYExampleNavBar class] toolbarClass:[UIToolbar class]];
     if ([nav respondsToSelector:@selector(setAutomaticallyAdjustsScrollViewInsets:)]) {
         nav.automaticallyAdjustsScrollViewInsets = NO;
